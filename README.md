@@ -1,8 +1,14 @@
 sudo iptables -S
   
-  // sudo apt-install iptables-persistent
+  /*
+  
+  sudo apt-install iptables-persistent
+  
   sudo iptables-save > /etc/iptables/rules.v4
+  
   sudo iptables-save > /etc/iptables/rules.v6
+  
+  */
   
  sudo iptables -A INPUT -p icmp -m icmp --icmp-type 8 -j DROP
  
